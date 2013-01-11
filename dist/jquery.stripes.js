@@ -93,14 +93,6 @@
       var diagonalLength = Math.sqrt((width*width)+(height*height));
 
 
-      console.log({
-          degrees: 180 * angle / Math.PI,
-          oppositeAngle: 180 * oppositeAngle / Math.PI,
-          diagonalLength:diagonalLength,
-          width: width,
-          sw: {x: sx * diagonalLength, y: sy * diagonalLength}
-      });
-
       var nw = {x: 0, y: 0};
       var sw = {x: Math.ceil(sx * diagonalLength), y: Math.ceil(sy * diagonalLength)};
       var se = {x: (sw.x + lineWidthDX  ), y: (sw.y + lineWidthDY)};

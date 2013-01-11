@@ -22,6 +22,8 @@ jQuery(function($) {
 
 ## Documentation
 
+Requires `<canvas>` so no IE8. 
+
       <img id="stripes" style="background:#888"/>
       <script>
         $('#stripes').stripes({
