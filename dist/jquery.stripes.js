@@ -1,11 +1,17 @@
-/*! jQuery Stripes - v0.2.0 - 2013-01-11
+/*! jQuery Stripes - v0.3.0 - 2013-01-11
 * https://github.com/patrickgunderson/jquery.stripes
 * Copyright (c) 2013 Patrick Gunderson; Licensed MIT */
 
 (function($) {
 
   // Collection method.
-  $.fn.stripes = function(options) {
+  $.fn.stripes = function(options){
+    if (this.is('img')){
+      this.attr('src', $.stripes(options));
+    }
+  };
+
+  $.stripes = function(options) {
     var TWO_PI = Math.PI * 2;
     var HALF_PI = Math.PI * 0.5;
     var defaults = {
@@ -154,12 +160,7 @@
       return newPath;
     }
 
-    if (this.is('img')){
-      this.attr('src', $canvas[0].toDataURL());
-    }
-
-
-    return this;
+    return $canvas[0].toDataURL();
   };
 
 }(jQuery));

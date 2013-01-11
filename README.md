@@ -26,6 +26,23 @@ $('#stripes').stripes({
 });
 </script>
 ```
+or get stripes as a dataURL image:
+
+```html
+
+
+<script>
+var myStripes = $.stripes({
+    lineWidth: 10,
+    separation: 10,
+    angle: 45, // degrees
+    degrees: true, // false for radians
+    foregroundColor: "#000", // takes any css color;
+    backgroundColor: null //transparent by default
+});
+$("#stripes").attr("src", myStripes)
+</script>
+```
 ## Play with it
 
 http://jsfiddle.net/gunderson/xdaYB/1/

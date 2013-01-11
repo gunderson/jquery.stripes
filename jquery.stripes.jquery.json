@@ -2,7 +2,7 @@
   "name": "jquery.stripes",
   "title": "jQuery Stripes",
   "description": "A jQuery plugin that creates stripes on an img element.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "homepage": "https://github.com/patrickgunderson/jquery.stripes",
   "author": {
     "name": "Patrick Gunderson",
