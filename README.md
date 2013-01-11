@@ -2,6 +2,8 @@
 
 A jQuery plugin that creates stripes on an img element.
 
+Requires `<canvas>` so no IE8. 
+
 ## Getting Started
 Download the [production version][min] or the [development version][max].
 
@@ -21,8 +23,6 @@ jQuery(function($) {
 ```
 
 ## Documentation
-
-Requires `<canvas>` so no IE8. 
 
       <img id="stripes" style="background:#888"/>
       <script>
