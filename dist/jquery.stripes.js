@@ -55,13 +55,13 @@
       ctx.fillRect(0,0,this.width, this.height);
     }
 
-    draw(path0);
-    draw(path1);
+    draw(path0, this.foregroundColor);
+    draw(path1, this.foregroundColor);
 
-    function draw(corners){
+    function draw(corners, color){
       //draw first stripe
-      console.log(corners);
-      ctx.fillStyle = "#000";
+      console.log(color);
+      ctx.fillStyle = color;
       ctx.beginPath();
       ctx.moveTo(corners[0].x,corners[0].y);
       ctx.lineTo(corners[1].x,corners[1].y);
