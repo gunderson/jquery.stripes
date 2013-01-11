@@ -10,10 +10,23 @@
 <body>
   <img id="stripes" style="background:#888"/>
   <script>
-  	$('#stripes').stripes({
-  		separation: 55,
-  		angle: -.25 * Math.PI
-  	});
+  	var pairs = decodeURIComponent(window.location.search.substr(1)).split("&");
+    var params = {};
+    $.each(pairs, function(i, pair){
+      var kv = pair.split("=");
+      if (kv.length > 1){
+       
+        var key = kv.shift();
+        var val = kv.join('=');
+        val = (!isNaN(parseFloat(val)))? parseFloat(val) : val;
+         console.log(val)
+        params[key] = val;
+      } else if (kv.length == 1){
+        params[kv[0]] = true;
+      }
+    })
+
+    $('#stripes').stripes(params);
   	$('body').css('backgroundImage', 'url(' + $('#stripes').attr('src') + ')');
 
   	// function animateBackground(){
