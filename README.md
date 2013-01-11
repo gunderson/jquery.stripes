@@ -19,9 +19,10 @@ In your web page:
 $('#stripes').stripes({
     lineWidth: 10,
     separation: 10,
-    angle: 0.25 * Math.PI, // radians
-    backgroundColor: null,
-    foregroundColor: "#000"
+    angle: 45, // degrees
+    degrees: true, // false for radians
+    foregroundColor: "#000", // takes any css color;
+    backgroundColor: null //transparent by default
 });
 </script>
 ```
