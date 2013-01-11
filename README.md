@@ -26,3 +26,6 @@ $('#stripes').stripes({
 });
 </script>
 ```
+## Play with it
+
+http://jsfiddle.net/gunderson/xdaYB/1/
