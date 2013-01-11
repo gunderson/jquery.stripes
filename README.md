@@ -12,40 +12,16 @@ Download the [production version][min] or the [development version][max].
 
 In your web page:
 
+
 ```html
-<script src="jquery.js"></script>
-<script src="dist/jquery.stripes.min.js"></script>
+<img id="stripes" style="background:#888"/>
 <script>
-jQuery(function($) {
-  $.awesome(); // "awesome"
+$('#stripes').stripes({
+    lineWidth: 10,
+    separation: 10,
+    angle: 0.25 * Math.PI, // radians
+    backgroundColor: null,
+    foregroundColor: "#000"
 });
 </script>
 ```
-
-## Documentation
-
-      <img id="stripes" style="background:#888"/>
-      <script>
-        $('#stripes').stripes({
-            lineWidth: 10,
-            separation: 55,
-            angle: -.25 * Math.PI, // radians
-            backgroundColor: null,
-            foregroundColor: "#000"
-        });
-      </script>
-
-## Examples
-    <img id="stripes" style="background:#888"/>
-    <script>
-        $('#stripes').stripes({
-            lineWidth: 10,
-            separation: 55,
-            angle: -.25 * Math.PI, // radians
-            backgroundColor: null,
-            foregroundColor: "#000"
-        });
-    </script>
-
-## Release History
-_(Nothing yet)_
