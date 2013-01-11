@@ -26,11 +26,12 @@ $('#stripes').stripes({
 });
 </script>
 ```
+http://jsfiddle.net/gunderson/xdaYB/1/
+
+
 or get stripes as a dataURL image:
 
 ```html
-
-
 <script>
 var myStripes = $.stripes({
     lineWidth: 10,
@@ -43,6 +44,6 @@ var myStripes = $.stripes({
 $("#stripes").attr("src", myStripes)
 </script>
 ```
-## Play with it
+http://jsfiddle.net/gunderson/v3c5e/1/
 
-http://jsfiddle.net/gunderson/xdaYB/1/
+## Play with it
