@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>debug</title>
+  <!-- Load local jQuery. This can be overridden with a ?jquery=___ param. -->
+  <script src="../libs/jquery/jquery.js"></script>
+  <script src="../src/jquery.stripes.js"></script>
+</head>
+<body>
+  <img id="stripes" style="background:#888"/>
+  <script>
+  	$('#stripes').stripes({
+  		separation: 55,
+  		angle: -.25 * Math.PI
+  	});
+  	$('body').css('backgroundImage', 'url(' + $('#stripes').attr('src') + ')');
+
+  	// function animateBackground(){
+  	// 	$('body').css('backgroundPositionX', '+=1px');
+  	// 	webkitRequestAnimationFrame(animateBackground)
+  	// }
+
+  	// webkitRequestAnimationFrame(animateBackground)
+
+  </script>
+</body>
+</html>

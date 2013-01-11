@@ -1,0 +1,29 @@
+{
+  "name": "jquery.stripes",
+  "title": "jQuery Stripes",
+  "description": "A jQuery plugin that creates stripes on an img element.",
+  "version": "0.2.0",
+  "homepage": "https://github.com/patrickgunderson/jquery.stripes",
+  "author": {
+    "name": "Patrick Gunderson",
+    "email": "pat@theorigin.net",
+    "url": "http://pat.theorigin.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/patrickgunderson/jquery.stripes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/patrickgunderson/jquery.stripes/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/patrickgunderson/jquery.stripes/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "1.8"
+  },
+  "keywords": []
+}
