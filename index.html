@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jquery.stripes by gunderson</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jquery.stripes</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/gunderson/jquery.stripes">View the Project on GitHub <small>gunderson/jquery.stripes</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/gunderson/jquery.stripes/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/gunderson/jquery.stripes/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/gunderson/jquery.stripes">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>jQuery Stripes</h1>
+
+<p>A jQuery plugin that creates stripes on an img element.</p>
+
+<p>Requires <code>&lt;canvas&gt;</code> so no IE8. </p>
+
+<h2>Getting Started</h2>
+
+<p>Download the <a href="https://raw.github.com/patrickgunderson/jquery.stripes/master/dist/jquery.stripes.min.js">production version</a> or the <a href="https://raw.github.com/patrickgunderson/jquery.stripes/master/dist/jquery.stripes.js">development version</a>.</p>
+
+<p>In your web page:</p>
+
+<div class="highlight"><pre><span class="nt">&lt;img</span> <span class="na">id=</span><span class="s">"stripes"</span> <span class="na">style=</span><span class="s">"background:#888"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">'#stripes'</span><span class="p">).</span><span class="nx">stripes</span><span class="p">({</span>
+    <span class="nx">lineWidth</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nx">separation</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nx">angle</span><span class="o">:</span> <span class="mi">45</span><span class="p">,</span> <span class="c1">// degrees</span>
+    <span class="nx">degrees</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// false for radians</span>
+    <span class="nx">foregroundColor</span><span class="o">:</span> <span class="s2">"#000"</span><span class="p">,</span> <span class="c1">// takes any css color;</span>
+    <span class="nx">backgroundColor</span><span class="o">:</span> <span class="kc">null</span> <span class="c1">//transparent by default</span>
+<span class="p">});</span>
+<span class="nt">&lt;/script&gt;</span>
+</pre></div>
+
+<p><a href="http://jsfiddle.net/gunderson/xdaYB/1/">http://jsfiddle.net/gunderson/xdaYB/1/</a></p>
+
+<p>or get stripes as a dataURL image:</p>
+
+<div class="highlight"><pre><span class="nt">&lt;script&gt;</span>
+<span class="kd">var</span> <span class="nx">myStripes</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">stripes</span><span class="p">({</span>
+    <span class="nx">lineWidth</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nx">separation</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="nx">angle</span><span class="o">:</span> <span class="mi">45</span><span class="p">,</span> <span class="c1">// degrees</span>
+    <span class="nx">degrees</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// false for radians</span>
+    <span class="nx">foregroundColor</span><span class="o">:</span> <span class="s2">"#000"</span><span class="p">,</span> <span class="c1">// takes any css color;</span>
+    <span class="nx">backgroundColor</span><span class="o">:</span> <span class="kc">null</span> <span class="c1">//transparent by default</span>
+<span class="p">});</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">"#stripes"</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">"src"</span><span class="p">,</span> <span class="nx">myStripes</span><span class="p">)</span>
+<span class="nt">&lt;/script&gt;</span>
+</pre></div>
+
+<p><a href="http://jsfiddle.net/gunderson/v3c5e/1/">http://jsfiddle.net/gunderson/v3c5e/1/</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/gunderson">gunderson</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
