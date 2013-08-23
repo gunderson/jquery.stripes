@@ -47,3 +47,7 @@ $("#stripes").attr("src", myStripes)
 http://jsfiddle.net/gunderson/v3c5e/1/
 
 ## Play with it
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gunderson/jquery.stripes/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
